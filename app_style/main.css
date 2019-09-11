@@ -1,0 +1,379 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+/* @media only screen and (min-width: 961px) {
+  body {
+    background: #B2D6FF; 
+  }
+}
+@media only screen and (max-width: 400px) {
+  body { 
+    background: #F09A9D; 
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background: #F5CF8E; 
+  }
+
+} */
+
+@media only screen and (min-width: 0px) and (max-width: 433px) {
+.title_line, .title{
+  visibility: hidden;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 950px) {
+  .form{
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 580px) {
+  .userInfo{
+    flex-direction: column;
+  }
+}
+
+.foto{
+  max-width: 42px;
+  max-height: 42px;
+  margin-right: 10px;
+}
+.wrapper{
+  display: flex;
+  justify-content: center;
+  width:100%;
+}
+.titleContainer{
+  /* border: 1px solid #200d0d; */
+  margin-top: 26px;
+  height: 42px;
+  width: 93%;
+  max-width: 980px;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 24px
+}
+.containeris{
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid #cf1212; */
+  background: #FFFFFF;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  width: 93%;
+  max-width: 980px;
+  
+}
+.glue{
+  display:flex;
+  flex-direction: column;
+  /* border: 2px solid #0054A6; */
+  max-width: 814px;
+  width: 88%;
+  padding-top: 44px;
+  
+}
+
+.form{
+  display:flex;
+  list-style-type: none;
+  justify-content: space-between;
+  width: 100%;
+  /* border: 1px solid rgb(0, 166, 28); */
+}
+
+.twoColumnPart{
+  list-style-type: none;
+ 
+}
+
+.task.comment{
+  max-width: 813px;
+  width: 100%;
+  height: 86.67px;
+  text-indent: 16px;
+  resize: none;
+  margin-bottom: 31px;
+}
+
+.title_line{
+
+  width: 42px;
+  height: 0px;
+  border: 2px solid #0054A6;
+  transform: rotate(90deg);
+  margin-top: 18px;
+}
+.title{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 21px;
+  text-transform: uppercase;
+  color: #0054A6;
+  margin-top: 10px;
+} 
+hr { 
+    border: 1px solid #BDBDBD;
+    margin-top: 0px;
+}
+
+body{
+  background: #F5F7F9;
+}
+
+.form-text{ /* "Atsiliepimo forma" tekstas */
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 24px;
+    color: #828282;
+    padding-bottom: 9px;
+  }
+label{/* "label pritaikyt ne inputs */
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 14px;
+    color: #828282;
+    padding-bottom: 8px;
+}
+.button{
+    background: #0054A6;
+    border-color: #0054A6;
+    border-width: 0px;
+    border-radius: 4px;
+    width: 115px;
+    height: 40px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F2F2F2;
+    float: right;
+    margin-bottom: 10px;
+
+}
+.task{ /* Boxas užduočių */
+    
+    background: #FFFFFF;
+    border: 1px solid #F2F2F2;
+    box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    max-width: 251px;
+    min-width: 251px;
+    width:100%;
+    height: 40px;
+    text-indent: 16px;
+    margin-bottom: 20px;
+  }
+
+  .task.adminName{
+    width: 100%;
+    max-width: 100px;
+    height: 40px;
+    text-indent: 16px;
+    resize: none;
+  }
+
+ label, input {
+    display: block;
+ }
+
+
+.rating{
+    color: #C4C4C4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul.rating {
+    display: inline-block;
+  }
+  
+  .rating li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 1px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .rating .filled {
+    color: #21568b;
+  }
+  .userPrintedName{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 18px;
+    color: #4F4F4F;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .userPrintedDate{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 14px;
+    margin-top: 3px;
+    color: #BDBDBD;
+  }
+  .userPrintedRecord{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 14px;
+    color: #828282;
+    word-break: break-word;
+    
+  }
+
+  .replybtn{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 14px;
+    color: #0054A6;
+    /* position: absolute;
+    right: 23px;
+    top: 0; */
+  }
+  .editbtn{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 14px;
+    color: #0054A6;
+    margin-left: 11px;
+  }
+  .logoutbtn{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 14px;
+    color: #0054A6;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+.pagenumbertext{
+  color: #0054A6;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 14px;
+  margin: 3px 5px 0px 5px;
+}
+.pagebtnstyle{
+  background: #0054A6;
+  color: #F2F2F2;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  border-color: #0054A6;
+  border-width: 0px;
+  border-radius: 2px;
+  font-size: 10px;
+  width: 60px;
+  height: 20px;
+  line-height: normal;
+ 
+}
+.button.cancel{
+  float: left;
+}
+.linebreak1{
+  margin-bottom: 28px;
+}
+.linebreak2{
+  margin-bottom: 35px;
+}
+.pageBtn{
+  display: flex;
+  justify-content:center;
+  margin-bottom: 20px;
+}
+ul.reviewsListStyle{
+   padding-left: 5%;
+  border-left: 4px solid rgba(30, 140, 190, 0.1);
+
+}
+
+.button.send{
+  margin-bottom: 10px;
+}
+.Vidus{
+  /* border: 1px solid #200d0d; */
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.Vartotojas{
+ 
+  display: flex;
+ 
+  position: relative;
+  flex-direction: column;
+
+}
+.userInfo{
+  display: flex;
+  margin-bottom: 18px;
+  /* border: 1px solid #e20808; */
+}
+
+.editbtn.admin{
+  position: absolute;
+  right: 81px;
+  top: 0px;
+}
+.replybtn.admin{
+  position: absolute;
+  right: 28px;
+  top: 0
+} 
+.editbtn{
+  position: absolute;
+  right: 81px;
+  top: 0px;
+}
+.replybtn{
+  position: absolute;
+  right: 28px;
+  top: 0
+} 
+.deleteIcon{
+  position: absolute;
+  right: 0px;
+  top: 0
+  } 
+.adminReplyForm, .adminEditForm{
+  padding-top: 16px;
+  padding-left: 5%;
+}
+.button.administratorreply, .button.administratoredit{
+  margin-bottom: 0px;
+}
+

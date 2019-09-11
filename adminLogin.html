@@ -1,0 +1,32 @@
+<!doctype html >
+<html>
+   <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="app_style/main.css">
+        <link rel="stylesheet" type="text/css" href="app_style/adminLoginStyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:500,300,400" rel="stylesheet">
+   </head>
+   <body>
+      <div ng-controller="LoginCtrl">
+        <div class="wrapper"> 
+            <div class="admin-container">
+                <div class="admin-form-container">
+                    <div class="form-title">Admin Login</div>
+                    <hr class="line1"/>
+                    <form name="message" method="post">
+                            <div class="formas">
+                                
+                                    <label for="display-password">Password</label>
+                                    <input type = "password" class="task password" id="display-password" name="password" maxlength="30" type="text" ng-model="password" required>
+                              
+                         
+                                <button class="button" ng-click="login(password)">Siųsti</button>
+                            </div>
+                        </form>
+                </div>
+            </div>
+        </div>
+      </div>
+   </body>
+</html>
